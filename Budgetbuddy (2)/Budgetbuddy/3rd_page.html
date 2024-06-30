@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense</title>
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+
+<body> 
+    <div class="dashboard">
+        <div class="ahhh">
+            <div class="dashfirst">
+                <!-- https://img.freepik.com/free-vector/handsome-man_1308-85984.jpg -->
+                <a href="8th_page.html"><img src="images/Mask group 1.svg" alt=""></a>
+                
+                <h1 class="heading">Hi,<br>Milan</h1>
+            </div>
+            <div class="line"></div>
+                <div class="dashsecond">
+                    <div class="home">
+                        <!-- <span class="material-symbols-outlined"> -->
+                        <img class="icon" src="images/Home.svg" alt="">
+        
+                        </span>
+                        <a href="index.html"><div class="txt">Home</div></a>
+                        
+                    </div>
+                    <!-- <div class="options">Home</div> -->
+                    <div class="home">
+                        <!-- <span class="material-symbols-outlined"> -->
+                        <img class="icon" src="images/Total Sales.svg" alt="">
+        
+                        </span>
+                        <a href="3rd_page.html"><div class="txt">Expense Tracking</div></a>
+                        
+                    </div>
+                    <div class="home">
+                        <!-- <span class="material-symbols-outlined">
+                            attach_money
+                        </span> -->
+                        <img class="icon" src="images/Money Bag.svg" alt="">
+                        <a href="4th_page.html"><div class="txt">Smart Budgeting</div></a>
+                        
+                    </div>
+                    <div class="home">
+                        <!-- <span class="material-symbols-outlined">
+                            savings
+                        </span> -->
+                        <img class="icon" src="images/Money Box.svg" alt="">
+                        <a href="5th_page.html"><div class="txt">Saving Goals</div></a>
+                        
+                    </div>
+                    <div class="home">
+                        <!-- <span class="material-symbols-outlined">
+                            notifications
+                        </span> -->
+                        <img class="icon" src="images/Alarm.svg" alt="">
+                        <a href="6th_page.html"><div class="txt">Notifications</div></a>
+                        
+                    </div>
+                </div>
+        </div>
+            <div class="seperate">
+                <div class="home">
+                    <!-- <span class="material-symbols-outlined">
+                    support_agent
+                </span> -->
+                    <img class="icon" src="images/Online Support.svg" alt="">
+                    <a href="7th_page.html"><div class="txt">Support</div></a>
+                </div>
+                <div class="home">
+                    <!-- <span class="material-symbols-outlined">
+                    logout
+                </span> -->
+                    <img class="icon" src="images/Logout Rounded Left.svg" alt="">
+                    <a href="index.html"><div class="txt">Logout</div>
+                    </a>
+                </div>
+            </div>
+    </div>
+    <!-- Section 2 -->
+    <div class="overview">
+        <h1 class="heading"> Balance Overview</h1>
+        <section class="last">
+            <div class="last_block">
+                <div class="content1">
+                    <p>Your total balance<span><img src="images/dots.png" alt="dotsimage"></span></p>
+                    <h1>₹ 8,000.49</h1>
+                </div>
+                <div class="up-down">
+                    <div class="Green">
+                        <p>Income</p>
+                        <h5>₹ 101,080.00</h1>
+                    </div>
+                    <div class="Red">
+                        <p>Spend</p>
+                        <h5>₹ 56,510.34</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="last_block">
+                <div class="content1">
+                    <p>Limit of this month<span><img src="images/dots.png" alt="dotsimage"></span></p>
+                    <h1>₹ 700.51</h1>
+                </div>
+                <div class="Bar">
+                    <!-- <progress id="file" value="72" max="100"><p>72%</p></progress> -->
+                    <div id="progress-bar">
+                        <div id="progress-fill">
+                            <span id="progress-text">73%</span>
+                        </div>
+                    </div>
+                    <p>2,100.42 / 3,000.00</p>
+                </div>
+            </div>
+        </section>
+        <!-- inside section 2 -->
+        <section class="ADD_Expense">
+            <div class="ADD_Expense_block">
+                <form action="/action_page.php" method="post">
+                    <div class="form-group">
+                        <label for="date">Date </label>
+                        <input type="date" class="form-control" id="date">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description </label>
+                        <input type="text" class="form-control" id="description"
+                            placeholder="e.g., Coffee at Starbucks">
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category </label>
+                        <input type="text" class="form-control" id="category"
+                            placeholder="Food, Transportation, Entertainment, Others">
+                        <!-- <select class="form-control" id="category">
+                            <option value="Food">Food</option>
+                            <option value="Transportation">Transportation</option>
+                            <option value="Entertainment">Entertainment</option>
+                            <option value="Others">Others</option>
+                        </select> -->
+                    </div>
+
+                    <div class="form-group">
+                        <label for="amount">Amount </label>
+                        <input type="number" class="form-control" id="amount" placeholder="Enter amount">
+                    </div>
+                    <a href="3rd_page.html">
+                        <button type="button" class="btn btn-dark btn-lg">Add Expense</button>
+                    </a>  
+                </form>
+
+            </div>
+        </section>
+
+        <!-- Section 3 -->
+        <div class="Expense_Insight">
+            <h1 class="heading"> Expense Insights</h1>
+            <section class="Charts">
+                <div class="Charts_block">
+                    <img src="images/image 6.png" alt="">
+                    <p>Monthly Spending</p>
+                </div>
+                <div class="Charts_block">
+                    <img src="images/image 7.png" alt="">
+                    <p>Expense Categories Comparison</p>
+                </div>
+            </section>
+        </div>
+        <!-- Section 4 -->
+        <div class="Expense_History">
+            <h1 class="heading"> Expense History</h1>
+            <section class="History">
+                <div class="hey">
+                    <div class="History_content">
+                        <div class="History_block">
+                            <p>This month <span> | </span> </p>
+                            <p>Last month <span> | </span> </p>
+                            <p>Coustom range</p>
+                        </div>
+                        <div class="History_block">
+                            <p>Total : <span id="high"> ₹ 5690.00</span></p>
+                        </div>
+                    </div>
+                    <table class="table ">
+                        <tr>
+                            <th>Date<span> | </span></th>
+                            <th>Description <span> | </span></th>
+                            <th>Category<span> | </span></th>
+                            <th><span1>Amount</span1></th>
+                            <th> </th>
+                        </tr>
+                        <tr>
+                            <td>12/10/2023</td>
+                            <td>Coffee at Starbucks</td>
+                            <td>Food</td>
+                            <td><span>₹ 390.00</span></td>
+                            <td><img src="images/dots.png" alt="dots"></td>
+                        </tr>
+                        <tr>
+                            <td>12/10/2023</td>
+                            <td>Cab</td>
+                            <td>Travel</td>
+                            <td><span>₹ 390.00</span></td>
+                            <td><img src="images/dots.png" alt="dots"></td>
+                        </tr>
+                        <tr>
+                            <td>12/10/2023</td>
+                            <td>Movie</td>
+                            <td>Entertainment</td>
+                            <td><span>₹ 390.00</span></td>
+                            <td><img src="images/dots.png" alt="dots"></td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </section>
+
+        </div>
+
+    </div>
+    <style src="js/script3.js"></style>
+</body>
+
+</html>

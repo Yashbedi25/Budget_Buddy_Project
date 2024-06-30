@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Poppins&display=swap');
+
+body {
+    background-color: rgba(24, 44, 72, 1);
+    /* height: 80%; */
+    width: 100%;
+    display: flex;
+    margin: 0px;
+    /* overflow: hidden; */
+}
+
+.dashboard {
+    width: 17.75rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+
+    /* border-radius: 0px, 55px, 25px, 0px; */
+
+    background-color: rgba(255, 255, 255, 1);
+
+    border-top-right-radius: 1.563rem;
+    border-bottom-right-radius: 1.563rem;
+    justify-content: space-between;
+    padding: 20px;
+}
+.dashfirst{
+    display: flex;
+}
+.logo_Txt {
+    display: inline-block;
+    /* height: 6.038rem;
+    width: 6.25rem; */
+    width: 203px;
+    height: 54px;
+    top: 20px;
+    left: 40px;
+    font-family: Cabin;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 44px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo_Txt .logotxt {
+    /* width: 6.25rem; */
+    width: 203px;
+    height: 104px;
+    top: 20px;
+    left: 40px;
+    font-family: Cabin;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 44px;
+    letter-spacing: 0.05em;
+    text-align: left;
+}
+
+.logotxt span {
+    color: rgba(69, 123, 157, 1);
+}
+
+.line {
+    width: 200px;
+    top: 84px;
+    left: 40px;
+    border: 2px;
+    /* angle: 0 deg; */
+    background: #1D355733;
+    border: 2px solid #1D355733;
+    margin-bottom: 2rem;
+}
+
+/* .responsive-image{
+    max-width: 100%;
+    height: auto;
+} */
+
+.profilePic {
+    height: 6.038rem;
+    width: 6.25rem;
+    /* border: 0.125rem solid black;
+    border-radius: 50%;
+    display: inline-block; */
+}
+
+.name {
+
+    color: #1D3557;
+    font-size: 2.25rem;
+    font-family: Cabin;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 0.113rem;
+    word-wrap: break-word;
+    display: inline-block;
+}
+.ahhh{
+    display: flex;
+    flex-direction: column;
+}
+.dashsecond {
+    height: auto;
+    /* background-color: rgba(255, 255, 255, 1); */
+}
+
+.options {
+    width: 15.25rem;
+    height: 4.063rem;
+    /* background-color: black; */
+}
+
+.seperate {
+display: flex;
+flex-direction: column;
+}
+
+.home {
+    color: rgba(69, 123, 157, 1);
+    /* border: 1px solid #000; */
+    /* background: rgba(255, 255, 255, 1); */
+    width: 15.25rem;
+    height: 4.063rem;
+    /* flex-shrink: 0; */
+    /* border: 2px solid black;
+    border-radius: 10px; */
+    /* display: flex; */
+    /* margin-left: 900px; */
+    /* margin-bottom: 30px; */
+    margin-top: 0.625rem;
+    /* display: inline-block; */
+    display: flex;
+    align-items: center;
+}
+
+.home:hover {
+    background: rgba(24, 44, 72, 0.8);
+    color: white;
+    border-radius: 0.625rem;
+}
+
+/* .home:hover .img1:hover {
+    content: url("Total\ Sales_white.png");
+ } */
+.icon{
+    padding: 5px;
+}
+.txt {
+    display: inline-block;
+    color: #1D3557;
+    font-size: 24px;
+    font-family: Cabin;
+    font-weight: 400;
+    line-height: 34.85px;
+    word-wrap: break-word;
+}
+
+.txt:hover {
+    color: white;
+}
+
+
+.overview {
+    width: 100rem;
+    /* height: 500rem; */
+    position: relative;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 25px;
+    margin: 20px;
+    float: left;
+    padding: 5rem;
+    justify-content: center;
+}
+
+
+
+.heading {
+    color: #1D3557;
+    font-size: 32px;
+    font-family: Cabin;
+    font-weight: 700;
+    text-transform: capitalize;
+    word-wrap: break-word;
+    text-align: center;
+    margin: 0%;
+}
+
+.last {
+     display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-template-rows: auto auto; */
+    grid-gap: 5px;
+    grid-auto-flow: row;
+
+    justify-content: center;
+    /* height: 3px; */
+    /* background-color: yellow; */
+
+}
+
+
+.last_block {
+    width: 300px;
+    background-color: rgba(11, 190, 242, 0.1);
+    border-radius: 1.563rem;
+    margin: 30px;
+    padding-left: 10px;
+    text-align: center;
+
+
+}
+
+.content1 p {
+    font-family: Cabin;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: gray;
+    opacity: 0.6px;
+    display: flex;
+    /* justify-content: center; */
+    margin-left: 5.5rem;
+    padding-top: 1 rem;
+
+}
+
+.last_block h1 {
+    color: rgba(29, 53, 87, 1);
+    font-family: Cabin;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.content1 p {
+    padding-top: 0.5rem;
+}
+
+.content1 img {
+    padding-left: 4rem;
+}
+
+.up-down {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Green {
+    color: rgba(23, 222, 79, 1);
+}
+
+.Green p {
+    color: rgba(23, 222, 79, 1);
+    font-family: Cabin;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0px;
+
+}
+
+.Green h5 {
+    font-family: Cabin;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 6px;
+}
+
+.Red {
+    color: rgba(247, 72, 122, 1);
+
+}
+
+.Red p {
+    color: rgba(247, 72, 122, 1);
+    font-family: Cabin;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0px;
+}
+
+.Red h5 {
+    font-family: Cabin;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 6px;
+}
+
+#file {
+    border-radius: 0px;
+}
+
+.Bar p {
+    font-family: Cabin;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: rgba(29, 53, 87, 1);
+    padding-right: 2rem;
+    /* margin: 0px; */
+}
+
+#progress-bar {
+    /* width: 500px; */
+    height: 20px;
+    /* border: 1px solid black; */
+    background-color: white;
+    margin: 30px;
+    margin-bottom: 0px;
+}
+
+#progress-fill {
+    width: 73%;
+    height: 100%;
+    background-color: rgba(230, 57, 70, 1);
+
+}
+#progress-fill_2{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(230, 57, 70, 1);
+
+}
+
+#progress-text {
+    position: relative;
+    top: 0;
+    text-align: center;
+    left: 20%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Section 2 */
+.ADD_Expense {
+
+    /* width: 90%; */
+    display: flex;
+    grid-gap: 5px;
+    grid-auto-flow: row;
+
+    justify-content: center;
+    /* height: 3px; */
+    /* background-color: yellow; */
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+
+.ADD_Expense_block {
+    width: 100%;
+    background-color: rgba(11, 190, 242, 0.1);
+    border-radius: 1.563rem;
+    /* margin-left: 30px; */
+    /* padding-left: 10px; */
+    text-align: center;
+    padding: 30px;
+}
+
+
+.form-group {
+    /* display: ; */
+    /* flex-direction: column; */
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+
+    font-family: Cabin;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: rgba(69, 123, 157, 1);
+}
+
+.form-group input {
+    font-family: Cabin;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: rgba(69, 123, 157, 0.5);
+
+}
+
+#description {
+    width: 84%;
+}
+
+#date {
+    width: 90%;
+}
+
+#amount {
+    width: 87%;
+}
+
+.form-control {
+    width: 80%;
+    padding: 2px;
+    padding-left: 10px;
+    margin-left: 10px;
+    /* border: 1px solid rgba(255, 255, 255, 1); */
+    border: none;
+    /* border-radius: 50%; */
+    border-radius: 100px;
+    height: 2rem;
+    color: rgba(69, 123, 157, 1);
+    font-family: Cabin;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+
+
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(69, 123, 157, 1);
+    padding: 7px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    /* text-align: center; */
+    font-family: Cabin;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #3372e6;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+
+.tips {
+    background-color: rgba(255, 214, 0, 0.25);
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.tips p {
+    font-family: Cabin;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: rgba(29, 53, 87, 1);
+    margin: 10px;
+}
+
+.tips p span {
+    padding-left: 10px;
+}
+
+/* Need this  */
+.Budget {
+    justify-content: center;
+    position: relative;
+}
+
+
+
+.Budget .card-content {
+    margin-left: 3rem;
+    background: rgba(11, 190, 242, 0.15);
+    border-radius: 25px;
+    /* width: 30%; */
+    padding: 1rem;
+    height: 15rem;
+    width: 14.5rem;
+
+}
+
+.card-content h2 {
+    /* padding-left: 1rem; */
+    display: flex;
+    text-align: center;
+    color: rgba(29, 53, 87, 1);
+
+    font-family: Cabin;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-left: 2rem;
+}
+
+.card-content h2 span {
+    padding-left: 3rem;
+}
+#space{
+    padding-left: 5rem;
+}
+
+.card-content h3 {
+    color: rgba(29, 53, 87, 1);
+    font-family: Cabin;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.card-content p {
+    color: rgba(29, 53, 87, 1);
+    font-family: Cabin;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+
+
+}
+
+.card-content p span {
+    color: rgba(29, 53, 87, 1);
+    font-family: Cabin;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.Cards {
+    display: flex;
+    width: 58rem;
+}
+
+.Cards {
+    overflow-x: scroll;
+}
+
+.Bar p {
+    font-family: Cabin;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: right;
+    padding-right: 0rem;
+
+}
+#progress-text1 {
+    position: relative;
+    top: 0;
+    text-align: center;
+    left: 60%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+#progress-text2 {
+    position: relative;
+    top: 0;
+    text-align: center;
+    left: 30%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+

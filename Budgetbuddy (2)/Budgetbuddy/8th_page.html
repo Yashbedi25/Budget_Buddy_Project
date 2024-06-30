@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="BipApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  
+    <script src="https://kit.fontawesome.com/c90bd6259d.js" crossorigin="anonymous"></script>
+  
+    <link rel="stylesheet" href="css/style8.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Nunito&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body onload="initialize()">
+    <div class="dashboard">
+        <div class="ahhh">
+            <div class="dashfirst">
+                <!-- https://img.freepik.com/free-vector/handsome-man_1308-85984.jpg -->
+                <a href="8th_page.html"><img src="images/Mask group 1.svg" alt=""></a>
+                
+                <h1 class="heading">Hi,<br>Milan</h1>
+            </div>
+            <div class="line"></div>
+                <div class="dashsecond">
+                    <div class="home">
+                        <!-- <span class="material-symbols-outlined"> -->
+                        <img class="icon" src="images/Home.svg" alt="">
+        
+                        </span>
+                        <a href="index.html"><div class="txt">Home</div></a>
+                        
+                    </div>
+                    <!-- <div class="options">Home</div> -->
+                    <div class="home">
+                        <!-- <span class="material-symbols-outlined"> -->
+                        <img class="icon" src="images/Total Sales.svg" alt="">
+        
+                        </span>
+                        <a href="3rd_page.html"><div class="txt">Expense Tracking</div></a>
+                        
+                    </div>
+                    <div class="home">
+                        <!-- <span class="material-symbols-outlined">
+                            attach_money
+                        </span> -->
+                        <img class="icon" src="images/Money Bag.svg" alt="">
+                        <a href="4th_page.html"><div class="txt">Smart Budgeting</div></a>
+                        
+                    </div>
+                    <div class="home">
+                        <!-- <span class="material-symbols-outlined">
+                            savings
+                        </span> -->
+                        <img class="icon" src="images/Money Box.svg" alt="">
+                        <a href="5th_page.html"><div class="txt">Saving Goals</div></a>
+                        
+                    </div>
+                    <div class="home">
+                        <!-- <span class="material-symbols-outlined">
+                            notifications
+                        </span> -->
+                        <img class="icon" src="images/Alarm.svg" alt="">
+                        <a href="6th_page.html"><div class="txt">Notifications</div></a>
+                        
+                    </div>
+                </div>
+        </div>
+            <div class="seperate">
+                <div class="home">
+                    <!-- <span class="material-symbols-outlined">
+                    support_agent
+                </span> -->
+                    <img class="icon" src="images/Online Support.svg" alt="">
+                    <a href="7th_page.html"><div class="txt">Support</div></a>
+                </div>
+                <div class="home">
+                    <!-- <span class="material-symbols-outlined">
+                    logout
+                </span> -->
+                    <img class="icon" src="images/Logout Rounded Left.svg" alt="">
+                    <a href="index.html"><div class="txt">Logout</div>
+                    </a>
+                </div>
+            </div>
+    </div>
+    <!-- Section 2 -->
+    <div class="overview">
+        <div ng-controller="BipCtrl" class="sample" layout="column">
+            <md-toolbar md-scroll-shrink>
+              <div class="md-toolbar-tools">
+                <h3>
+                <span>Profile Settings</span>
+              </h3>
+              </div>
+            </md-toolbar>
+            <md-content class="md-padding">
+              <md-tabs md-dynamic-height md-border-bottom>
+                <md-tab label="PROFILE">
+                  <md-content>
+                    <div ng-controller="BipCtrl" layout="column" class="inputBasicUsage" ng-app="BipApp">
+        
+                      <md-content layout-padding="">
+                        <form name="userForm">
+        
+                          <div layout="" layout-sm="column">
+                            <md-input-container flex="">
+                              <label>First name</label>
+                              <input ng-model="user.firstName">
+                            </md-input-container>
+                            <md-input-container flex="">
+                              <label>Last Name</label>
+                              <input ng-model="user.lastName">
+                            </md-input-container>
+                          </div>
+        
+        
+                          <div layout="" layout-sm="column">
+                            <md-input-container flex=''>
+                              <label>Email</label>
+                              <input ng-model="user.email" type="email">
+                            </md-input-container>
+                            <md-input-container flex=''>
+                              <label>Phone</label>
+                              <input ng-model="user.phone" type="phone">
+                            </md-input-container>
+                          </div>
+        
+                          <md-input-container flex="">
+                            <label>Address</label>
+                            <input ng-model="user.address">
+                          </md-input-container>
+                          <md-input-container md-no-float="">
+                            <input ng-model="user.address2" placeholder="Address 2">
+                          </md-input-container>
+        
+                          <div layout="" layout-sm="column" id="locationField">
+                            <md-input-container flex="">
+                              <label>City</label>
+                              <input ng-model="user.city" id="autocomplete" onFocus="geolocate()" type="text">
+                            </md-input-container>
+                            <md-input-container flex="">
+                              <label>State</label>
+                              <input ng-model="user.state">
+                            </md-input-container>
+                            <md-input-container flex="">
+                              <label>Postal Code</label>
+                              <input ng-model="user.postalCode">
+                            </md-input-container>
+                          </div>
+        
+                          <md-input-container flex="">
+                            <label>Country</label>
+                            <input ng-model="user.country">
+                          </md-input-container>
+        
+        
+                          <md-input-container flex="">
+                            <label>Bio</label>
+                            <textarea ng-model="user.bio" columns="1" md-maxlength="200"></textarea>
+                          </md-input-container>
+                          <section layout="row" layout-sm="column" layout-align="end">
+                            <md-button class="md-raised md-primary">Update setting</md-button>
+                          </section>
+                        </form>
+                      </md-content>
+                    </div>
+                  </md-content>
+                </md-tab>
+                <md-tab label="SECURITY">
+                  <div ng-controller="ListCtrl" layout="column" layout-sm="column">
+        
+                    <md-content class="md-padding">
+                      <form name="passwordForm">
+                        <md-input-container flex="">
+                          <label>Current password</label>
+                          <input ng-model="user.pass">
+                        </md-input-container>
+                        <md-input-container flex="">
+                          <label>New password</label>
+                          <input ng-model="user.newpass">
+                        </md-input-container>
+                        <md-input-container flex="">
+                          <label>Confirm password </label>
+                          <input ng-model="user.checkpass">
+                        </md-input-container>
+                        <fieldset class="standard-2">
+                          <section layout="row">
+                            <h3 class="profile">Diactivate account</h3>
+                            <span flex></span>
+                            <md-switch class="md-warn-account" ng-model="setting.enabled"></md-switch>
+                            </md-list-item>
+                          </section>
+        
+                          <p>If you deactivate your account your profile won’t be visible to other people on Biptik and people won’t be able to search for you. If you’d like to come back to Biptik anytime after you’ve deactivated your account, you can reactivate
+                            your account by logging in with your email and password. Remember that you will need to have access to the login email address for your account in order to reactivate it. If you can't get into your account, you can reset your password.</p>
+        
+        
+                          <section layout="row" layout-sm="column" layout-align="end">
+                            <md-button class="md-raised md-primary">Update setting</md-button>
+                          </section>
+                        </fieldset>
+                        <fieldset class="standard">
+                          <legend>
+                            <h3 class="profile">Close account</h3></legend><span>I understand that by clicking this button, I am willing to close my Biptik account. If you have used bips of services this month you will get checkout into your primary billing account outside of the service.</span>
+                          <br>
+                          <section layout="row" layout-sm="column" layout-align="end">
+                            <md-button class="md-warn md-raised" ng-click="showConfirm($event)">Close account</md-button>
+                          </section>
+                        </fieldset>
+                      </form>
+                    </md-content>
+                  </div>
+                </md-tab>
+                <md-tab label="NOTIFICATION">
+        
+                  <div ng-controller="ListCtrl" layout="column" layout-sm="column">
+        
+                    <md-list-item ng-repeat="topping in toppings">
+                      <p> {{ topping.name }} </p>
+                      <md-checkbox class="md-primary" ng-model="topping.wanted"></md-checkbox>
+                    </md-list-item>
+                    <md-divider></md-divider>
+        
+        
+                  </div>
+                </md-tab>
+              </md-tabs>
+            </md-content>
+          </div>
+          <!-- Angular Material Dependencies -->
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
+        
+          <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.js"></script>
+        
+          <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
+          <script src="js/script8.js"></script>
+    </div>
+</body>
+
+
+</html>
